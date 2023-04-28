@@ -1,12 +1,171 @@
-#form-ageApp{
+#formageApp{
     position: relative;
     display: flex;
     flex-direction:column;
-    max-width: 100%;
+    max-width: 38rem;
     background-color: $white;
-    width: 40rem;
-    height: 30rem;
+    width: 95%;
+    height: 28rem;
+    justify-content: center;
+    align-items:center;
     border-radius: 20px 20px 150px 20px;
     -webkit-box-shadow: -7px 5px 1px 5px #f0f0f0; 
-    box-shadow: -3px 1px 1px 1px #f0f0f0;
+    box-shadow: -1px 1px 1px 1px #f0f0f0;
+}
+
+/* Structure input-date    */
+.input-date{
+    max-width: 90%;
+    position: relative;
+    width: 30rem;
+    height: 8.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  
+}
+
+.form-date{
+    max-width: 100%;
+    width: 5.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    margin-right: 1rem;
+    row-gap: 10px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: $smokey-grey;
+    
+    
+}
+
+/*Define width of inputs*/
+
+input.txt-text{
+    padding-left: 1rem;
+    max-width: 5.6rem;
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 5px;
+    border:1px solid $Off-black;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: $Off-black
+
+}
+
+.error{
+    position: absolute;
+    bottom: -10px;
+    font-size: 0.4rem;
+    color: $light-red;
+    font-style: italic;
+    font-weight: 700;
+}
+
+//define bottom
+
+.btn-circle {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: $purple; /* color del botón */
+    background-image: url('/assets/images/icon-arrow.svg'); /* ruta de la imagen */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 70%; /* tamaño de la imagen */
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4); /* sombra del botón */
+    bottom: -2.1rem;
+    right: 0;
+    z-index: 1;
+}
+  
+  .btn-circle span {
+    display: block;
+    text-align: center;
+    color: $white;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+
+.output-date{
+    position: inherit;
+    display: grid;
+    justify-content: start;
+    align-content: end;
+    grid-auto-rows: minmax(3rem, auto);
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 90%;
+    width: 30rem;
+    height:16.5rem;
+    border-top: 1px solid $light-grey;
+}
+
+.forms{
+    max-width: 100%;
+    width: 100%;
+    font-size: 4.5rem;
+     
+}
+
+.form-years{
+    height: 5rem;
+    display:flex;
+    flex-direction: row;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+   
+}
+
+.form-month{
+    height: 5rem;
+    display:flex;
+    flex-direction: row;
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    
+}
+
+.form-day{
+    height: 5rem;
+    display:flex;
+    flex-direction: row;
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+}
+
+//Define text output-date
+
+.state-date{
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    color: $purple;
+    font-weight: 800;
+    font-style: italic;
+    
+}
+
+.txt-state{
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-weight: 800;
+    font-style: italic;
+    
+    
+}
+
+.btn-circle:hover{
+    background-color: $Off-black;
 }

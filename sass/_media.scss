@@ -1,0 +1,48 @@
+@media only screen  and (max-width: 375px){
+   
+  .input-date{
+    justify-content: space-evenly;
+  }
+  
+    .form-date{
+        margin: 0;
+        padding: 0;
+        row-gap: 5px;
+       
+
+    input.txt-text{
+        width: 60%;
+        height: 2rem;
+        font-size: 1rem;
+    }
+}
+
+.error{
+    bottom: -10px;
+    letter-spacing: 0;
+}
+
+    .btn-circle{
+        width: 3rem;
+        height: 3rem;
+        bottom: 0;
+        right: 50%;
+        transform: translate(50%, 50%);
+
+    }
+    .form1{
+        padding: 0;
+       
+    }
+
+    .txt-state{
+        max-width: 100%;
+        width: 80%;
+        font-size: 75%;
+    }
+
+    .state-date{
+        font-size: 75%;
+    }
+    
+}
